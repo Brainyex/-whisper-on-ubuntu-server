@@ -1,0 +1,8 @@
+# Установка пакетов 
+apt update & apt update -y
+
+# Установка пакетов python (требуется для установки приложения whisper)
+apt install python3 pip3 -y
+
+# Установка пакета из стороннего репозитория с игнорированием установки из сторноннего источника.
+pip install -U openai-whisper --break-system-packages
